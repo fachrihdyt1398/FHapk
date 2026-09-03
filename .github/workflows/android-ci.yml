@@ -1,4 +1,4 @@
-name: Android CI
+﻿name: Android CI
 
 on:
   push:
@@ -25,37 +25,7 @@ jobs:
           if [ -n "$GOOGLE_SERVICES_JSON" ]; then
             echo "$GOOGLE_SERVICES_JSON" > app/google-services.json
           else
-            cat > app/google-services.json <<'EOF'
-{
-  "project_info": {
-    "project_number": "000000000000",
-    "project_id": "fhapk-placeholder",
-    "storage_bucket": "fhapk-placeholder.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
-        "android_client_info": {
-          "package_name": "com.fhapk.app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSy0000000000000000000000000000000000000"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    }
-  ],
-  "configuration_version": "1"
-}
-EOF
+            cp app/google-services.placeholder.json app/google-services.json
           fi
 
       - name: Set up JDK 17
@@ -91,37 +61,7 @@ EOF
           if [ -n "$GOOGLE_SERVICES_JSON" ]; then
             echo "$GOOGLE_SERVICES_JSON" > app/google-services.json
           else
-            cat > app/google-services.json <<'EOF'
-{
-  "project_info": {
-    "project_number": "000000000000",
-    "project_id": "fhapk-placeholder",
-    "storage_bucket": "fhapk-placeholder.appspot.com"
-  },
-  "client": [
-    {
-      "client_info": {
-        "mobilesdk_app_id": "1:000000000000:android:0000000000000000000000",
-        "android_client_info": {
-          "package_name": "com.fhapk.app"
-        }
-      },
-      "oauth_client": [],
-      "api_key": [
-        {
-          "current_key": "AIzaSy0000000000000000000000000000000000000"
-        }
-      ],
-      "services": {
-        "appinvite_service": {
-          "other_platform_oauth_client": []
-        }
-      }
-    }
-  ],
-  "configuration_version": "1"
-}
-EOF
+            cp app/google-services.placeholder.json app/google-services.json
           fi
 
       - name: Set up JDK 17
