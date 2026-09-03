@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "557213417728",
+    "project_id": "android-3afea",
+    "storage_bucket": "android-3afea.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:557213417728:android:4283b409da297e4d8073e5",
+        "android_client_info": {
+          "package_name": "com.fhapk.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDfGZsooua4oH3jEJb18BsSU9ru0XRHfZ4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
