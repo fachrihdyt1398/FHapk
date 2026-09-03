@@ -10,3 +10,4 @@
 *.jks
 *.keystore
 *.log
+/google-services.json

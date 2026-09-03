@@ -2,4 +2,8 @@
 <resources>
     <string name="app_name">FHapk</string>
     <string name="hello">Halo dari FHapk!</string>
+    <string name="add_note">Tambah catatan</string>
+    <string name="hint_title">Judul</string>
+    <string name="hint_content">Tulis catatan di sini…</string>
+    <string name="delete">Hapus</string>
 </resources>
